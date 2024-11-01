@@ -7,7 +7,7 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "Express" });
 });
 
-router.get("/year", (req, res) => {
+router.get("/year", function (req, res) {
   res.json({ year: new Date().getFullYear().toString() });
 });
 
